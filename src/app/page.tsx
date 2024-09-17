@@ -29,7 +29,7 @@ export default function Home() {
           className="object-cover"
         />
         <div className="my-8">
-          <p className={`${typewriter.className} text-[10px]`}>
+          <p className={`${typewriter.className} text-[11px]`}>
             A story! Yet another tragedy! hear, hear
             <br /> Of my town in the north, Cheer! Cheer!
             <br />
@@ -117,7 +117,7 @@ export default function Home() {
             <br /> A tale of a road- where a stranger walked.
             <br />
             <br />
-            <br /> And whose only remaining beauty,
+            <br /> And of a town whose only remaining beauty,
             <br /> is the path she strolled on.
           </p>
         </div>
