@@ -1,101 +1,131 @@
+import { Arizonia } from "next/font/google";
 import Image from "next/image";
+import localFont from "next/font/local";
+import Link from "next/link";
+
+const arizonia = Arizonia({
+  weight: ["400"],
+  subsets: ["latin"],
+});
+
+const typewriter = localFont({
+  src: "./fonts/JMHTypewriter.ttf",
+  weight: "400",
+});
 
 export default function Home() {
   return (
-    <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]">
-      <main className="flex flex-col gap-8 row-start-2 items-center sm:items-start">
+    <div
+      className={`min-h-screen bg-stone-900 w-full flex justify-center p-4 text-white  ${arizonia.className}`}
+    >
+      <div className="flex flex-col items-center gap-6">
+        <h1 className="text-5xl mt-8">Untitled</h1>
+        <p className={`${typewriter.className}`}>A poem by Savarkavi</p>
         <Image
-          className="dark:invert"
-          src="https://nextjs.org/icons/next.svg"
-          alt="Next.js logo"
-          width={180}
-          height={38}
-          priority
+          src={"/photo.jpg"}
+          alt="photo"
+          width={400}
+          height={400}
+          className="object-cover"
         />
-        <ol className="list-inside list-decimal text-sm text-center sm:text-left font-[family-name:var(--font-geist-mono)]">
-          <li className="mb-2">
-            Get started by editing{" "}
-            <code className="bg-black/[.05] dark:bg-white/[.06] px-1 py-0.5 rounded font-semibold">
-              src/app/page.tsx
-            </code>
-            .
-          </li>
-          <li>Save and see your changes instantly.</li>
-        </ol>
-
-        <div className="flex gap-4 items-center flex-col sm:flex-row">
-          <a
-            className="rounded-full border border-solid border-transparent transition-colors flex items-center justify-center bg-foreground text-background gap-2 hover:bg-[#383838] dark:hover:bg-[#ccc] text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="https://nextjs.org/icons/vercel.svg"
-              alt="Vercel logomark"
-              width={20}
-              height={20}
-            />
-            Deploy now
-          </a>
-          <a
-            className="rounded-full border border-solid border-black/[.08] dark:border-white/[.145] transition-colors flex items-center justify-center hover:bg-[#f2f2f2] dark:hover:bg-[#1a1a1a] hover:border-transparent text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 sm:min-w-44"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Read our docs
-          </a>
+        <div className="my-8">
+          <p className={`${typewriter.className} text-sm`}>
+            A story! Yet another tragedy! hear, hear
+            <br /> Of my town in the north, Cheer! Cheer!
+            <br />
+            <br />
+            <br /> As I walked the line of that dreadful season,
+            <br /> of the clouds that take the form of strips,
+            <br /> of the dawn when the sun commits treason
+            <br />
+            and of the sweat that comes down to your lips,
+            <br />
+            <br /> My eyes got laid on something beautiful,
+            <br /> mind you fellows, by chance,
+            <br /> but I kept looking anyway, and she did too glance!
+            <br />
+            <br /> But as the delight and thrill came over,
+            <br /> as she passed my home and turned cold,
+            <br /> it disappeared as quickly, the misery took over,
+            <br /> when she passed and away down the road.
+            <br />
+            <br /> And people! Though my gaze was helpless,
+            <br /> it was not without hope,
+            <br /> for if she went up, she sure is coming down the slope!
+            <br />
+            <br /> I must confess something, lend me an ear apart,
+            <br /> I was only to see her to cast aside the dark clouds.
+            <br /> The dullness of the day which loomed over my heart,
+            <br /> shall be cured for the moments I see her round.
+            <br />
+            <br />
+            And so, I expected nothing in return,
+            <br /> I shall only be an admirer from afar on my sail,
+            <br /> and continue my tell tale, my fellows sit straight!
+            <br />
+            <br />
+            Now the day slowly passed into evening,
+            <br /> the air smelled of petrichor and anticipation.
+            <br /> And my feet tapped patiently for her coming,
+            <br /> while the naïve mind rehearsed the adoration.
+            <br />
+            <br /> And when the clouds cleared, in her arrival,
+            <br /> a thing occurred of most unexpected.
+            <br /> I caught her looking! Now I stand corrected!
+            <br />
+            <br /> My dear fellows, let me ask you this-
+            <br />
+            Do you believe in magic? I do not, I must claim.
+            <br /> But the one to fill your heart down from the abyss,
+            <br /> is no less than of it, just has a different name.
+            <br />
+            <br /> O&apos; yes how my soul longed for those brief moments,
+            <br /> to be a gentle breeze brushing her hair,
+            <br /> and the reflection which only her mirror must know.
+            <br />
+            <br /> Even the humming birds that came from ashore,
+            <br /> sang in praise of the steps and the curves she made.
+            <br /> They sang, “Am I the love that you looked for?
+            <br /> Answer under your breadth, spell out your fate.”
+            <br />
+            <br /> And what felt like an eternity was gone,
+            <br /> in the blink of an eye.
+            <br /> I watched the wind carry her off, without a reply.
+            <br />
+            <br /> From the morning rush to the evening hues,
+            <br /> the story continued of our sharp exchanges.
+            <br /> We sang the same song for any clues,
+            <br /> until it became the story for the ages.
+            <br />
+            <br />
+            <br /> O&apos; yes my dear fellows, the time was up,
+            <br /> It was the clock’s betrayal in my hour of need.
+            <br /> I had to raise the wine in a glass of cup,
+            <br /> a toast and farewell to my vacation in forest deep.
+            <br />
+            <br /> I did thought of waving her a hand,
+            <br /> or perhaps even a smile?
+            <br />
+            Alas! Only I didn’t get to see her for the last time.
+            <br />
+            <br /> Or the last time had already been decided?
+            <br /> when the time didn’t run backwards.
+            <br /> Our paths which had been so magically collided,
+            <br /> was judged and punished for us cowards.
+            <br />
+            <br /> And this, my fellows, is a song of a travel,
+            <br /> of my journey up in north.
+            <br /> A tale of a road- where a stranger walked.
+            <br />
+            <br />
+            <br /> And whose only remaining beauty,
+            <br /> is the path she strolled on.
+          </p>
         </div>
-      </main>
-      <footer className="row-start-3 flex gap-6 flex-wrap items-center justify-center">
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="https://nextjs.org/icons/file.svg"
-            alt="File icon"
-            width={16}
-            height={16}
-          />
-          Learn
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="https://nextjs.org/icons/window.svg"
-            alt="Window icon"
-            width={16}
-            height={16}
-          />
-          Examples
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="https://nextjs.org/icons/globe.svg"
-            alt="Globe icon"
-            width={16}
-            height={16}
-          />
-          Go to nextjs.org →
-        </a>
-      </footer>
+        <Link href={"/send-love"} className="text-lg text-blue-400 underline">
+          Send Love
+        </Link>
+      </div>
     </div>
   );
 }
