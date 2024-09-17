@@ -29,7 +29,7 @@ export default function Home() {
           className="object-cover"
         />
         <div className="my-8">
-          <p className={`${typewriter.className} text-sm`}>
+          <p className={`${typewriter.className} text-[10px]`}>
             A story! Yet another tragedy! hear, hear
             <br /> Of my town in the north, Cheer! Cheer!
             <br />
@@ -96,7 +96,6 @@ export default function Home() {
             <br /> the story continued of our sharp exchanges.
             <br /> We sang the same song for any clues,
             <br /> until it became the story for the ages.
-            <br />
             <br />
             <br /> O&apos; yes my dear fellows, the time was up,
             <br /> It was the clock’s betrayal in my hour of need.
